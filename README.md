@@ -52,6 +52,13 @@ Each noisy file corresponds **exactly** to a clean version (e.g., `p1_1.wav` cle
 Two model architectures were tested:
 1. **Simple CNN Autoencoder** – Baseline model for denoising.  
 2. **ResNet-based Network** – Transfer learning model adapted for audio enhancement.
+3. **DCCRN (Deep Complex Convolutional Recurrent Network)**
+
+· Combines complex-valued convolutions with LSTM layers
+
+· Operates in the time-frequency domain, learning both magnitude and phase
+
+· State-of-the-art for speech enhancement tasks
 
 Both models learn to map a **noisy waveform** to its corresponding **clean waveform** using MSE loss.
 
@@ -81,5 +88,6 @@ python scripts/train_model.py
 ``` bash
 python scripts/evaluate_model.py
 ``` 
+
 
 # THANKYOU !
