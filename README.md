@@ -49,7 +49,7 @@ Each noisy file corresponds **exactly** to a clean version (e.g., `p1_1.wav` cle
 
 ## 🧠 Model Description
 
-Two model architectures were tested:
+3 model architectures were tested:
 1. **Simple CNN Autoencoder** – Baseline model for denoising.  
 2. **ResNet-based Network** – Transfer learning model adapted for audio enhancement.
 3. **DCCRN (Deep Complex Convolutional Recurrent Network)**
@@ -91,3 +91,4 @@ python scripts/evaluate_model.py
 
 
 # THANKYOU !
+
